@@ -34,3 +34,37 @@ body{
     margin-top: 20px;
     border-radius: 2px;
 }
+.Task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 410px;
+    margin-top: 30px;
+    border: 1px solid white;
+    padding: 10px;
+    max-height: 300px;
+}
+.Task-text{
+    font-size: 14px;
+    font-style: italic;
+    font-family: monospace;
+    word-break: break-all;
+}
+.Task-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.task-icon{
+    cursor: pointer;
+}
+.task-icon:nth-child(1){
+    color: red;
+    font-size: 24px;
+    margin-right: 5px;
+}
+.task-icon:nth-child(2){
+    color: rgb(0, 60, 255);
+    font-size: 24px;
+}

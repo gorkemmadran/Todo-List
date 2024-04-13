@@ -1,9 +1,13 @@
 import React from 'react'
 
-function TaskList() {
-  return (
-    <div>TaskList</div>
-  )
-}
+import Task from './Task'
 
+
+function TaskList() {
+return(
+  <div>
+    <Task />
+  </div>
+)
+ }
 export default TaskList
