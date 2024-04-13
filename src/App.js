@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import TaskCreater from './TaskCreater';
 
 function App() {
   return (
     <div className="App">
-      
+      <TaskCreater />
     </div>
   );
 }
