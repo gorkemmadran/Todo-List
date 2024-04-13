@@ -5,7 +5,7 @@ function TaskCreater({addTask}) {
   const [inputVal, setInputVal] = useState('')
   const buttonClicked = (e) =>{
   addTask({
-    id: Math.floor(Math.random() * 1000),
+    id: Math.floor(Math.random() * 100000),
     text: inputVal
   })
   setInputVal('')
