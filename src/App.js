@@ -11,10 +11,19 @@ function App() {
   const onDelete = (id) =>{
     setTasks(tasks.filter(task =>task.id !== id))
   }
+  const onUpdate = (newTodo) =>{
+    const request = tasks.map(task =>{
+      if(task.id !== newTodo.id){
+        return task
+      }
+      return newTodo
+    })
+    setTasks([...request])
+  }
   return (
     <div className="App">
       <TaskCreater addTask={addTask}  />
-      <TaskList onDelete={onDelete} tasks={tasks}  />
+      <TaskList onUpdate={onUpdate} onDelete={onDelete} tasks={tasks}  />
     </div>
   );
 }
