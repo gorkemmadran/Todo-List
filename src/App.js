@@ -22,6 +22,7 @@ function App() {
   }
   return (
     <div className="App">
+      <h1 className='App-title'>Todo List</h1>
       <TaskCreater addTask={addTask}  />
       <TaskList onUpdate={onUpdate} onDelete={onDelete} tasks={tasks}  />
     </div>
